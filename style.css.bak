@@ -1,0 +1,179 @@
+/*
+Theme Name:     Hometown Child
+Description:    Child theme of the Hometown Theme
+Author:         LeafThemes
+Author URI:     http://leafthemes.com
+Template:       hometown-theme
+Version:        1.0.0
+*/
+
+/* ------- Insert custom styles below this line ------- */
+
+div.layout-inner div.main-content div.row li div.card div.img-wrap {max-height:184px;}
+
+.hoffman-status-unknown {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;
+    color: #fff;
+    z-index: 100;
+    overflow: hidden;
+    width:105px; 
+    text-align:center;
+    padding:0px;
+}
+
+.hoffman-status-available {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;
+    color: #fff;
+    z-index: 100;
+    overflow: hidden;
+    width:105px; 
+    text-align:center;
+    padding:0px;
+}
+
+.single-property .hoffman-status-available {bottom:20px;right:20px;padding:4px 20px;width:125px;}
+
+.hoffman-status-available:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; 
+      background:rgba(139,0,0,.7);
+}
+
+.hoffman-status-unknown:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background:rgba(0,89,48,.7);
+}
+
+.hoffman-status-available a {
+      color: #fff; }
+
+.hoffman-status-unknown a {
+      color: #fff; }
+
+/* Success Message */
+
+.single-property .message-mask {
+  width: 500px;
+  height: 240px;
+  left: 50%; margin-left: -250px;
+  top: 50%; margin-top: -120px;
+  -webkit-animation: fadeaway 2s;
+  -moz-animation:    fadeaway 2s;
+  -o-animation:      fadeaway 2s;
+  animation:         fadeaway 2s;
+  animation-delay: 5s;
+  -o-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeaway {
+  0%   { opacity: 1; display: inherit; }
+  99% { display: inherit; }
+  100% { opacity: 0; display: none; }
+}
+@-moz-keyframes fadeaway {
+  0%   { opacity: 1; display: inherit; }
+  99% { display: inherit; }
+  100% { opacity: 0; display: none; }
+}
+@-o-keyframes fadeaway {
+  0%   { opacity: 1; display: inherit; }
+  99% { display: inherit; }
+  100% { opacity: 0; display: none; }
+}
+@keyframes fadeaway {
+  0%   { opacity: 1; display: inherit; }
+  99% { display: inherit; }
+  100% { opacity: 0; display: none; }
+}
+
+/* Single Property */
+body .property-hero .badge { right: 10px; bottom: 10px; }
+body .property-hero .badge .status { font-size: 14px; right: 10px; bottom: 10px; padding: 4px 20px; width: 125px; }
+body .property-hero .status:before { background: #8b0000; }
+
+/* --------- modal lead form styles ------------- */
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width:600px; 
+}
+
+#myModal .modal-content textarea.wpcf7-textarea{max-height:120px;}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The 'property for sale' button */
+#myBtn.hoffmanModalButton{
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+}
+
+/* --- Logo In Header CSS --- */
+
+.header-wrap .branding img {
+  display: inline-block;
+  max-height: 100%;
+  vertical-align: middle;
+  width: auto;
+}

@@ -1,0 +1,82 @@
+/* CSS for Hoffman Company white label login page */
+
+body.login {
+	background-image: url('login-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.login h1 a {
+	background-image: url('login-logo.png');
+	height: 100px;
+}
+
+.login label {
+	font-size: 12px;
+	color: #252525;
+	font-weight: bold;
+}
+ 
+.login input[type="text"]{
+	background-color: #ffffff;
+	border-color:#dddddd;
+	-webkit-border-radius: 4px;
+}
+ 
+.login input[type="password"]{
+	background-color: #ffffff;
+	border-color:#dddddd;
+	-webkit-border-radius: 4px;
+}
+
+
+p#backtoblog { /* removes the back to blog link */
+display: none;
+}
+
+p#nav { /* removes the forgot password link */
+display: none;
+}
+
+.login .button-primary {
+	width: 120px;
+	float:right;
+	background-color:#005930 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#005930), to(#005930));
+	background: -webkit-linear-gradient(top, #005930, #005930);
+	background: -moz-linear-gradient(top, #005930, #005930);
+	background: -ms-linear-gradient(top, #005930, #005930);
+	background: -o-linear-gradient(top, #005930, #005930);
+	background-image: -ms-linear-gradient(top, #005930 0%, #005930 100%);
+	color: #ffffff;
+	-webkit-border-radius: 4px;
+	border: 1px solid #005930;
+}
+ 
+.login .button-primary:hover {
+	background-color:#00a659 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00a659), to(#00a659 ));
+	background: -webkit-linear-gradient(top, #00a659, #00a659 );
+	background: -moz-linear-gradient(top, #00a659, #00a659 );
+	background: -ms-linear-gradient(top, #00a659, #00a659 );
+	background: -o-linear-gradient(top, #00a659, #00a659 );
+	background-image: -ms-linear-gradient(top, #00a659 0%, #00a659 100%);
+	color: #fff;
+	-webkit-border-radius: 4px;
+	border: 1px solid #00a659;
+}
+ 
+.login .button-primary:active {
+	background-color:#005930 !important;
+	background: -webkit-gradient(linear, left top, left bottom, from(#005930), to(#005930));
+	background: -webkit-linear-gradient(top, #005930, #005930);
+	background: -moz-linear-gradient(top, #005930, #005930);
+	background: -ms-linear-gradient(top, #005930, #005930);
+	background: -o-linear-gradient(top, #005930, #005930);
+	background-image: -ms-linear-gradient(top, #005930 0%, #005930 100%);
+	color: #fff;
+	-webkit-border-radius: 4px;
+	border: 1px solid #005930;
+}
